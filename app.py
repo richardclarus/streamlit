@@ -1,7 +1,6 @@
 import streamlit as st
 import pickle
 import pandas as pd
-import joblib
 
 
 st.title('Car Price Prediction')
@@ -12,9 +11,6 @@ html_temp = """
 <h2 style="color:white;text-align:center;">Streamlit ML App </h2>
 </div>"""
 st.markdown(html_temp,unsafe_allow_html=True)
-
-#model_rf = open("model_rf.pkl","rb")
-#model = joblib.load(model_rf)
 
 model= pickle.load(open('model_rf.pkl', 'rb'))
 
