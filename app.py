@@ -18,9 +18,9 @@ features = pickle.load(open('model_features.pkl', 'rb'))
 
 
 
-hp=st.slider("What is the hp of your car", 60,200)
+hp=st.slider("What is the hp of your car", 60,200, step=5)
 age=st.selectbox("What is the age of your car",(1,2,3))
-km=st.slider("What is the km of your car", 0,100000)
+km=st.slider("What is the km of your car", 0,100000, step=100)
 car_model=st.selectbox("Select model of your car", ('A1','A3','Astra','Clio','Corsa','Espace','Insignia'))
 
 my_dict = {
